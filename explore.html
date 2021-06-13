@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta http-equip="X-UA-compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="css/style.css"
+      media="screen"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"
+    ></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/jquery.store.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/textillate/0.4.0/jquery.textillate.js"></script>
+    <style>
+        .trending{
+            text-align: center;
+            font-size: 3em;
+        }
+
+        @media only screen and (max-width: 450px){
+            .trending{
+                font-size: 2em;
+            }
+        }
+    </style>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <h1 class="app-title" data-in-effect="rollIn">Reader's Paradise</h1>
+      <p>"A room without book is like body without soul."</p>
+    </header>
+    <!-- Header End -->
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#">Reader's Paradise</a>
+      <button
+        class="alignMenu navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" id="username" style="color: white;"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="explore.html">Explore</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="signup.html" id="sign-up">Sign Up</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html" id="login">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html" id="sign-out">Sign Out</a>
+          </li>
+        </ul>
+      </div>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="cart.html">
+            <i class="fa fa-shopping-cart" style="font-size: 26px"></i>
+            <span
+              id="itemCount"
+              class="alignItems cart-basket d-flex align-items-center justify-content-center"
+            >
+            </span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Books section -->
+    <section class="new-arrivals">
+      <div id="site">
+        <div class="container">
+            <p class="trending">Trending Books</p>
+          <div class="row">
+            <!-- ##########################################BELOW############################################## -->
+            <div class="col-md-3" data-aos="fade-right">
+              <div class="card">
+                <div class="product-top">
+                  <img
+                    src="images/lordofthering.jpg"
+                    onclick="details(this);"
+                  />
+                </div>
+
+                <div class="product-bottom text-center">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-o"></i>
+                  <div class="clickable" onclick="descDetails(this)">
+                    <h3>Lord of the Rings</h3>
+                  </div>
+                  <div
+                    class="product-description"
+                    data-name="Lord of the Rings"
+                    data-price="23"
+                    data-src="images/lordofthering.jpg"
+                    data-desc="The first sets the stage for the adventure and follows Frodo Baggins as he flees from his
+                    home in the Shire to escape the minions of the Dark Lord Sauron. Sauron seeks the One Ring that will
+                    allow him to control the Bearers of the nineteen other Rings and control the three major races of Middle-earth:
+                    Elves, Men, and Dwarves. The One Ring has been inherited by Frodo who finds himself unwittingly in the midst of a
+                     struggle for world domination.The first chapter in the book begins quite lightly, following on from The Hobbit
+                     which is more of a whimsical children's story than The Lord of the Rings. It begins with Bilbo celebrating his
+                     111th (or eleventy first, as it is called) birthday, on the same day that Frodo celebrates his 33rd birthday (his
+                     'coming of age'). At the birthday party, Bilbo disappears after his speech, to the surprise of all. Frodo later learns
+                     about the ring which he had used to make himself invisible, and also about some of its darker powers. "
+                  >
+                    <p class="product-price">&dollar; 10</p>
+                    <form class="add-to-cart" action="cart.html" method="post">
+                      <div>
+                        <label for="qty-2">Quantity</label>
+                        <input
+                          type="text"
+                          name="qty-2"
+                          id="qty-2"
+                          class="qty"
+                          value="1"
+                        />
+                      </div>
+                      <p>
+                        <input type="submit" value="Add to cart" class="btn" />
+                      </p>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2 -->
+
+            <div class="col-md-3" data-aos="fade-right">
+              <div class="card">
+                <div class="product-top">
+                  <img src="images/harrypotter.jpg" onclick="details(this);" />
+                </div>
+
+                <div class="product-bottom text-center">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <div class="clickable" onclick="descDetails(this)">
+                    <h3>Harry Potter</h3>
+                  </div>
+                  <div
+                    class="product-description"
+                    data-name="Harry Potter"
+                    data-price="24"
+                    data-src="images/harrypotter.jpg"
+                    data-desc="Ten-year-old Harry Potter is an orphan who lives in the fictional London suburb of Little Whinging,
+                    Surrey, with the Dursleys: his uncaring Aunt Petunia, loathsome Uncle Vernon, and spoiled cousin Dudley. The Dursleys
+                    barely tolerate Harry, and Dudley bullies him. One day Harry is astonished to receive a letter addressed to him in the
+                     cupboard under the stairs (where he sleeps). Before he can open the letter, however, Uncle Vernon takes it. Letters for
+                      Harry subsequently arrive each day, in increasing numbers, but Uncle Vernon tears them all up, and finally, in an attempt
+                      to escape the missives, the Dursleys go to a miserable shack on a small island. On Harry’s 11th birthday, a giant named
+                      Hagrid arrives and reveals that Harry is a wizard and that he has been accepted at the Hogwarts School of Witchcraft and
+                      Wizardry. He also sheds light on Harry’s past, informing the boy that his parents, a wizard and a witch, were killed by
+                      the evil wizard Voldemort and that Harry acquired the lightning-bolt scar on his forehead during the fatal confrontation."
+                  >
+                    <p class="product-price">&dollar; 24</p>
+                    <form class="add-to-cart" action="cart.html" method="post">
+                      <div>
+                        <label for="qty-2">Quantity</label>
+                        <input
+                          type="text"
+                          name="qty-2"
+                          id="qty-2"
+                          class="qty"
+                          value="1"
+                        />
+                      </div>
+                      <p>
+                        <input type="submit" value="Add to cart" class="btn" />
+                      </p>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3 -->
+
+            <div class="col-md-3" data-aos="fade-right">
+              <div class="card">
+                <div class="product-top">
+                  <img src="images/tokillamockingbird.jpg" onclick="details(this);" />
+                </div>
+
+                <div class="product-bottom text-center">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-o"></i>
+                  <div class="clickable" onclick="descDetails(this)">
+                    <h3>Kill a Mockingbird</h3>
+                  </div>
+                  <div
+                    class="product-description"
+                    data-name="To Kill a Mockingbird"
+                    data-price="35"
+                    data-src="images/tokillamockingbird.jpg"
+                    data-desc="Scout Finch lives with her brother, Jem, and their widowed father, Atticus, in the sleepy Alabama town
+                       of Maycomb. Maycomb is suffering through the Great Depression, but Atticus is a prominent lawyer and the Finch
+                       family is reasonably well off in comparison to the rest of society. One summer, Jem and Scout befriend a boy named
+                       Dill, who has come to live in their neighborhood for the summer, and the trio acts out stories together. Eventually,
+                       Dill becomes fascinated with the spooky house on their street called the Radley Place. The house is owned by Mr. Nathan
+                       Radley, whose brother, Arthur (nicknamed Boo), has lived there for years without venturing outside.Scout goes to school
+                       for the first time that fall and detests it. She and Jem find gifts apparently left for them in a knothole of a tree on
+                       the Radley property. Dill returns the following summer, and he, Scout, and Jem begin to act out the story of Boo Radley.
+                       Atticus puts a stop to their antics, urging the children to try to see life from another person’s perspective before making judgments.
+                       But, on Dill’s last night in Maycomb for the summer, the three sneak onto the Radley property, where Nathan Radley shoots at them."
+                  >
+                    <p class="product-price">&dollar; 35</p>
+                    <form class="add-to-cart" action="cart.html" method="post">
+                      <div>
+                        <label for="qty-2">Quantity</label>
+                        <input
+                          type="text"
+                          name="qty-2"
+                          id="qty-2"
+                          class="qty"
+                          value="1"
+                        />
+                      </div>
+                      <p>
+                        <input type="submit" value="Add to cart" class="btn" />
+                      </p>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4 -->
+
+            <div class="col-md-3" data-aos="fade-right">
+              <div class="card">
+                <div class="product-top">
+                  <img src="images/warandpeace.jpg" onclick="details(this);" />
+                </div>
+
+                <div class="product-bottom text-center">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <div class="clickable" onclick="descDetails(this)">
+                    <h3>War and Peace</h3>
+                  </div>
+                  <div
+                    class="product-description"
+                    data-name="War and Peace"
+                    data-price="50"
+                    data-src="images/warandpeace.jpg"
+                    data-desc="War and Peace opens in the Russian city of St. Petersburg in 1805, as Napoleon’s conquest of western Europe is
+                      just beginning to stir fears in Russia. Many of the novel’s characters are introduced at a society hostess’s party, among
+                      them Pierre Bezukhov, the socially awkward but likeable illegitimate son of a rich count, and Andrew Bolkonski, the intelligent
+                      and ambitious son of a retired military commander. We also meet the sneaky and shallow Kuragin family, including the wily father
+                      Vasili, the fortune-hunter son Anatole, and the ravishing daughter Helene. We are introduced to the Rostovs, a noble Moscow
+                      family, including the lively daughter Natasha, the quiet cousin Sonya, and the impetuous son Nicholas, who has just joined the
+                       army led by the old General Kutuzov. The Russian troops are mobilized in alliance with the Austrian empire, which is currently
+                       resisting Napoleon’s onslaught. Both Andrew and Nicholas go to the front. Andrew is wounded at the Battle of Austerlitz, and
+                       though he survives, he is long presumed dead. Pierre is made sole heir of his father’s fortune and marries Helene Kuragina in a daze.
+                       Helene cheats on Pierre, and he challenges her seducer to a duel in which Pierre nearly kills the man"
+                  >
+                    <p class="product-price">&dollar; 50</p>
+                    <form class="add-to-cart" action="cart.html" method="post">
+                      <div>
+                        <label for="qty-2">Quantity</label>
+                        <input
+                          type="text"
+                          name="qty-2"
+                          id="qty-2"
+                          class="qty"
+                          value="1"
+                        />
+                      </div>
+                      <p>
+                        <input type="submit" value="Add to cart" class="btn" />
+                      </p>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+            <!-- ########################################3Above####################################3 -->
+            <p class="trending">Popular Books</p>
+            <div class="row">
+            <div class="col-md-3" data-aos="fade-left">
+              <div class="card">
+                <div class="product-top">
+                  <img src="images/elon_musk.jfif" onclick="details(this);" />
+                </div>
+
+                <div class="product-bottom text-center">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-o"></i>
+                  <div class="clickable" onclick="descDetails(this)">
+                    <h3>Elon Musk</h3>
+                  </div>
+                  <div
+                    class="product-description"
+                    data-name="Elon Musk"
+                    data-price="10"
+                    data-src="images/elon_musk.jfif"
+                    data-desc="In the spirit of Steve Jobs and Moneyball,
+                  Elon Musk is both an illuminating and authorized look at the extraordinary life of one
+                  of Silicon Valley’s most exciting, unpredictable, and ambitious entrepreneurs—a real-life
+                  Tony Stark—and a fascinating exploration of the renewal of American invention and its new “makers.”
+                  Elon Musk spotlights the technology and vision of Elon Musk, the renowned entrepreneur and innovator
+                  behind SpaceX, Tesla, and SolarCity, who sold one of his Internet companies, PayPal, for $1.5 billion.
+                  Ashlee Vance captures the full spectacle and arc of the genius’s life and work, from his tumultuous
+                  upbringing in South Africa and flight to the United States to his dramatic technical innovations and entrepreneurial pursuits.
+                  Vance uses Musk’s story to explore one of the pressing questions of our age: can the nation of inventors
+                  and creators who led the modern world for a century still compete in an age of fierce global competition?
+                  He argues that Musk—one of the most unusual and striking figures in American business history—is a contemporary,
+                  visionary amalgam of legendary inventors and industrialists including Thomas Edison, Henry Ford, Howard Hughes,
+                  and Steve Jobs. More than any other entrepreneur today, Musk has dedicated his energies and his own vast fortune to
+                  inventing a future that is as rich and far-reaching as the visionaries of the golden age of science-fiction fantasy.
+                  Thorough and insightful, Elon Musk brings to life a technology industry that is rapidly and dramatically changing by
+                  examining the life of one of its most powerful and influential titans."
+                  >
+                    <p class="product-price">&dollar; 10</p>
+                    <form class="add-to-cart" action="cart.html" method="post">
+                      <div>
+                        <label for="qty-2">Quantity</label>
+                        <input
+                          type="text"
+                          name="qty-2"
+                          id="qty-2"
+                          class="qty"
+                          value="1"
+                        />
+                      </div>
+                      <p>
+                        <input type="submit" value="Add to cart" class="btn" />
+                      </p>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3" data-aos="fade-left">
+              <div class="card">
+                <div class="product-top">
+                  <img src="images/conor.jpg" onclick="details(this);" />
+                </div>
+
+                <div class="product-bottom text-center">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-o"></i>
+                  <div class="clickable" onclick="descDetails(this)">
+                    <h3>Conor</h3>
+                  </div>
+                  <div
+                    class="product-description"
+                    data-name="Conor"
+                    data-price="15"
+                    data-src="images/conor.jpg"
+                    data-desc="A firefighter kills a girl and descends into madness and incarceration.
+                  Denied access to his unborn baby while the medical fraternity locks him away for a
+                  crime he didn't commit, probably, he fights for his freedom in any way he can,
+                  and that can only be in a way that is against society's rules. He reels under the
+                  hatred and disgust of normal society, makes unconventional allies, however conventional
+                  in his new world, finds unexpected love where he could least have expected it, and suffers
+                  tragedy that leaves him resentful and rejecting the world as he had once known it. Conor is
+                  a novel evocative of the thin veil lying between sanity and madness, and the tragedy of a
+                  broken love story and a rebirth of a broken man from society's forgotten dregs, rejected
+                  by family, friends, and peers, forced to break his own rules and deny his own upbringing
+                  to find love and freedom once more."
+                  >
+                    <p class="product-price">&dollar; 15</p>
+                    <form class="add-to-cart" action="cart.html" method="post">
+                      <div>
+                        <label for="qty-2">Quantity</label>
+                        <input
+                          type="text"
+                          name="qty-2"
+                          id="qty-2"
+                          class="qty"
+                          value="1"
+                        />
+                      </div>
+                      <p>
+                        <input type="submit" value="Add to cart" class="btn" />
+                      </p>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3" data-aos="fade-left">
+              <div class="card">
+                <div class="product-top">
+                  <img src="images/godInRuins.jpg" onclick="details(this);" />
+                </div>
+                <div class="product-bottom text-center">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-o"></i>
+                  <div class="clickable" onclick="descDetails(this)">
+                    <h3>A God In Ruins</h3>
+                  </div>
+                  <div
+                    class="product-description"
+                    data-name="A God In Ruins"
+                    data-price="14"
+                    data-src="images/godInRuins.jpg"
+                    data-desc="A companion to the best-selling Life After Life follows
+                  the experiences of Ursulas younger brother Teddy who throughout
+                  the decades following wartime service he never expected to
+                  survive struggles with family life against a backdrop of a changing
+                  world Reading-group guide available Reprint 150 000 first printing"
+                  >
+                    <p class="product-price">&dollar; 14</p>
+                    <form class="add-to-cart" action="cart.html" method="post">
+                      <div>
+                        <label for="qty-2">Quantity</label>
+                        <input
+                          type="text"
+                          name="qty-2"
+                          id="qty-2"
+                          class="qty"
+                          value="1"
+                        />
+                      </div>
+                      <p>
+                        <input type="submit" value="Add to cart" class="btn" />
+                      </p>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3" data-aos="fade-left">
+              <div class="card">
+                <div class="product-top">
+                  <img src="images/wildRobot.jpg" onclick="details(this);" />
+                </div>
+
+                <div class="product-bottom text-center">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-o"></i>
+                  <div class="clickable" onclick="descDetails(this)">
+                    <h3>Wild Robot</h3>
+                  </div>
+                  <div
+                    class="product-description"
+                    data-name="Wild Robot"
+                    data-price="30"
+                    data-src="images/wildRobot.jpg"
+                    data-desc="When robot Roz opens her eyes for the first time,
+                  she discovers that she is alone on a remote, wild island.
+                  She has no idea how she got there or what her purpose is--but
+                  she knows she needs to survive. After battling a fierce storm
+                  and escaping a vicious bear attack, she realizes that her only
+                  hope for survival is to adapt to her surroundings and learn
+                  from the island's unwelcoming animal inhabitants.
+                  As Roz slowly befriends the animals, the island starts
+                  to feel like home--until, one day, the robot's mysterious
+                  past comes back to haunt her.
+                  From bestselling and award-winning author and
+                  illustrator Peter Brown comes a heartwarming and action-packed
+                  novel about what happens when nature and technology collide."
+                  >
+                    <p class="product-price">&dollar; 30</p>
+                    <form class="add-to-cart" action="cart.html" method="post">
+                      <div>
+                        <label for="qty-2">Quantity</label>
+                        <input
+                          type="text"
+                          name="qty-2"
+                          id="qty-2"
+                          class="qty"
+                          value="1"
+                        />
+                      </div>
+                      <p>
+                        <input type="submit" value="Add to cart" class="btn" />
+                      </p>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-3" data-aos="fade-right">
+              <div class="card">
+                <div class="product-top">
+                  <img src="images/blackRabbit.jpg" onclick="details(this);" />
+                </div>
+
+                <div class="product-bottom text-center">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-o"></i>
+                  <div class="clickable" onclick="descDetails(this)">
+                    <h3>Black Rabbit</h3>
+                  </div>
+                  <div
+                    class="product-description"
+                    data-name="Black Rabbit"
+                    data-price="31"
+                    data-src="images/blackRabbit.jpg"
+                    data-desc="Rabbit has a problem.
+                  There’s a large black rabbit chasing him.
+                  No matter where he runs — behind a tree,
+                  over the river — the shadowy rabbit follows.
+                  Finally in the deep, dark wood, Rabbit loses his nemesis —
+                  only to encounter a real foe! Kids who like to be in on
+                  the secret will revel in this humorous look at shadows and
+                  friendship, brought to light by a talented animator."
+                  >
+                    <p class="product-price">&dollar; 31</p>
+                    <form class="add-to-cart" action="cart.html" method="post">
+                      <div>
+                        <label for="qty-2">Quantity</label>
+                        <input
+                          type="text"
+                          name="qty-2"
+                          id="qty-2"
+                          class="qty"
+                          value="1"
+                        />
+                      </div>
+                      <p>
+                        <input type="submit" value="Add to cart" class="btn" />
+                      </p>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3" data-aos="fade-right">
+              <div class="card">
+                <div class="product-top">
+                  <img src="images/compass.jpg" onclick="details(this);" />
+                </div>
+
+                <div class="product-bottom text-center">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-o"></i>
+                  <div class="clickable" onclick="descDetails(this)">
+                    <h3>Compass</h3>
+                  </div>
+                  <div
+                    class="product-description"
+                    data-name="Compass"
+                    data-price="30"
+                    data-src="images/compass.jpg"
+                    data-desc="&quot;<b>The compass's rocky evolution is charted with
+                    an enthusiast's passion…A fascinating adventure.&quot; —Bernadette
+                    Murphy, Los Angeles Times</b><br>
+                    This is the rich history of the most important navigational
+                    device of all time, the magnetic compass, born of the need
+                    for a reliable means of negotiating treacherous sea routes
+                    around the globe. Compass chronicles the misadventures of
+                    those who attempted to perfect the instrument—so precious
+                    to sixteenth-century seamen that, by law, any man found
+                    tampering with one had his hand pinned to the mast with a
+                    dagger. Part history, part adventure, this book is a
+                    compelling tribute to human ingenuity—and the mysteries
+                    of the sea."
+                  >
+                    <p class="product-price">&dollar; 30</p>
+                    <form class="add-to-cart" action="cart.html" method="post">
+                      <div>
+                        <label for="qty-2">Quantity</label>
+                        <input
+                          type="text"
+                          name="qty-2"
+                          id="qty-2"
+                          class="qty"
+                          value="1"
+                        />
+                      </div>
+                      <p>
+                        <input type="submit" value="Add to cart" class="btn" />
+                      </p>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3" data-aos="fade-right">
+              <div class="card">
+                <div class="product-top">
+                  <img
+                    src="images/beautyandbeast.jpg"
+                    onclick="details(this);"
+                  />
+                </div>
+                <div class="product-bottom text-center">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-o"></i>
+                  <div class="clickable" onclick="descDetails(this)">
+                    <h3>Beauty and Beast</h3>
+                  </div>
+                  <div
+                    class="product-description"
+                    data-name="The beauty and the beast"
+                    data-price="16"
+                    data-src="images/beautyandbeast.jpg"
+                    data-desc="Come be our guest in the Beast’s castle where
+                  teapots talk, spoons dance, and beautiful Belle discovers
+                  that things are never quite as they seem. Disney’s Beauty
+                  and the Beast is retold in the classic Little Golden Book
+                  format."
+                  >
+                    <p class="product-price">&dollar; 16</p>
+                    <form class="add-to-cart" action="cart.html" method="post">
+                      <div>
+                        <label for="qty-2">Quantity</label>
+                        <input
+                          type="text"
+                          name="qty-2"
+                          id="qty-2"
+                          class="qty"
+                          value="1"
+                        />
+                      </div>
+                      <p>
+                        <input type="submit" value="Add to cart" class="btn" />
+                      </p>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3" data-aos="fade-right">
+              <div class="card">
+                <div class="product-top">
+                  <img src="images/heaven.jpg" onclick="details(this);" />
+                </div>
+                <div class="product-bottom text-center">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-o"></i>
+                  <div class="clickable" onclick="descDetails(this)">
+                    <h3>Heaven</h3>
+                  </div>
+                  <div
+                    class="product-description"
+                    data-name="Heaven"
+                    data-price="40"
+                    data-src="images/heaven.jpg"
+                    data-desc="<b>Winner of the Anisfield-Wolf Book Award for Poetry<br>
+                    Winner of the Nicolás Guillén Outstanding Book Award<br>
+                    Finalist for the Griffin International Poetry Prize<br>
+                    Long-listed for the National Book Award<br>
+                    Long-listed for the PEN Open Book Award<br>
+                    One of The Washington Post’s Best Poetry Collections of 2015<br>
+                    One of NPR’s Best Books of 2015<br>
+                    One of Flavorwire’s Best Poetry Books of 2015</b><br>
+                    <q>Who the hell's heaven is this?</q> Rowan Ricardo Phillips offers
+                    many answers, and none at all, in Heaven, the piercing and
+                    revelatory encore to his award-winning debut, The Ground.
+                    Swerving elegantly from humor to heartbreak, from Colorado to Florida,
+                    from Dante's Paradise to Homer's Iliad, from knowledge to ignorance to
+                    awe, Phillips turns his gaze upward and outward, probing and upending
+                    notions of the beyond.<br>
+                    <q>Feeling, real feeling / with all its faulty / Architecture, is / Beyond a god's touch</q>
+                    ―but it does not elude Phillips. Meditating on feverish boyhood,
+                    on two paintings by Chuck Close, on Shakespeare's Measure for Measure,
+                     on a dead rooster by the side of the road in Ohio, on an elk
+                     grazing outside his window, his language remains eternally
+                     intoxicating, full of play, pathos, and surprise.
+                    <q>The end,</q> he writes, <q>like / All I've ever told you
+                    , is uncertain.</q> Or, elsewhere: <q>The only way then to
+                    know a truth / Is to squint in its direction and poke.</q>
+                    Phillips―who received a 2013 Whiting Writers'
+                    Award as well as the PEN/Joyce Osterweil Award―may not be certain
+                    , but as he squints and pokes in the direction of truth,
+                    his power of perception and elegance of expression
+                    create a place where beauty and truth come together and
+                    drift apart like a planet orbiting its star. The result is a
+                    book whose lush and wounding beauty will leave its mark on
+                    readers long after they've turned the last page."
+                  >
+                    <p class="product-price">&dollar; 40</p>
+                    <form class="add-to-cart" action="cart.html" method="post">
+                      <div>
+                        <label for="qty-2">Quantity</label>
+                        <input
+                          type="text"
+                          name="qty-2"
+                          id="qty-2"
+                          class="qty"
+                          value="1"
+                        />
+                      </div>
+                      <p>
+                        <input type="submit" value="Add to cart" class="btn" />
+                      </p>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Books section End -->
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="foo-link">
+        <a href="#">Sitemap</a>
+        <a href="faq.html">FAQ's</a>
+        <a href="explore.html">Explore</a>
+        <a href="cart.html">Cart Page</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="signup.html" id="sign-up-bottom">Sign Up</a>
+        <a href="login.html" id="login-bottom">Login</a>
+        <a href="index.html" id="sign-out-bottom">Sign Out</a>
+      </div>
+      <p>Copyright &copy; Reader's Paradise</p>
+    </footer>
+    <!-- Footer End -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      $(function () {
+        $('.app-title').textillate();
+      });
+    </script>
+  </body>
+</html>

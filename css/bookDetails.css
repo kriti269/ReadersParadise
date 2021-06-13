@@ -1,0 +1,49 @@
+.container img {
+  float:right;
+  margin-right: 3%;
+  height: 75%;
+  width: 75%;
+}
+
+.creative {
+  margin-top: 3% !important;
+  margin-left: 0px !important;
+  font-weight: bold;
+  color: #d3450d !important;
+}
+
+form.add-to-cart div {
+  text-align: left !important;
+}
+
+form.add-to-cart p {
+  color: #379683;
+  margin-top: 2%;
+  text-align: left !important;
+}
+
+form.add-to-cart p .btn {
+  width: 50%;
+  margin-bottom: 3% !important;
+}
+
+#book-desc {
+  font-size: small;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 770px) {
+  [class="container"] img{
+    height: 50%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  [class="container"] img{
+    height: 30%;
+  }
+
+  [class="btn"]{
+    width: 75% !important;
+  }
+}

@@ -1,0 +1,38 @@
+.aboutus-content{
+  background-image: url("../images/aboutus_bg.jpg");
+  background-repeat: round;
+  padding: 10%;
+  margin-top: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 83%;
+  height: 100%;
+  margin-bottom: 5%;
+  display: none;
+}
+
+.aboutus-content img{
+  width: 5%;
+  float: right;
+  margin-left: 5%;
+  margin-bottom: 1%;
+  border-radius: 10px;
+  border: 2px dashed goldenrod;
+  padding: 5px;
+  display: none;
+}
+
+.aboutus-who{
+      width: 43%;
+}
+
+@media only screen and (max-width: 770px) {
+  [class="aboutus-content"] img{
+    float: none;
+    width: 80% !important;
+    margin-left: 10%;
+  }
+  [class="aboutus-who"]{
+    width: 100% !important;
+  }
+}
